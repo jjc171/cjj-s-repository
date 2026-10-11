@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+void swap(int *x, int *y)
+{
+    int temp = *x; 
+    *x = *y;       
+    *y = temp;     
+}
+
+int main()
+{
+    int a = 1, b = 2;
+    printf("交换前：a=%d, b=%d\n", a, b);
+
+    swap(&a, &b); 
+
+    printf("交换后：a=%d, b=%d\n", a, b);
+    return 0;
+}
+
